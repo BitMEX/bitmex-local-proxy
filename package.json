@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/BitMEX/bitmex-local-proxy",
   "dependencies": {
-    "bouncy": "^3.2.1"
+    "http-proxy": "^1.3.0"
   }
 }
