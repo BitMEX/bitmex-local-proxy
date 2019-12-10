@@ -9,15 +9,18 @@ var httpProxy = require('http-proxy');
 var apiURL = 'https://www.bitmex.com';
 var port = process.argv[2];
 
-var proxy = httpProxy.createProxyServer({});
+var proxy = httpProxy.createProxyServer({
+  changeOrigin: true
+});
 
 var server = require('http').createServer(function(req, res) {
   // API validates origin and referer to prevent certain types of csrf attacks, so delete them
   delete req.headers['origin'];
   delete req.headers['referer'];
   res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Headers', 'content-type');
 
-  req.url = '/api/v1' + req.url;
+  // req.url = '/api/v1' + req.url;
   proxy.web(req, res, { target: apiURL });
 });
 
