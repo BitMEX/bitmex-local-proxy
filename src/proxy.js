@@ -7,7 +7,7 @@ if (process.argv.length < 2) {
 
 var httpProxy = require('http-proxy');
 var apiURL = 'https://www.bitmex.com';
-var port = process.argv[2];
+var port = process.env.PORT || process.argv[2] || 8081;
 
 var proxy = httpProxy.createProxyServer({
   changeOrigin: true

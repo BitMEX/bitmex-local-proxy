@@ -4,7 +4,7 @@
   "description": "Proxy to BitMEX API.",
   "main": "src/proxy.js",
   "scripts": {
-    "start": "node src/proxy.js 8081",
+    "start": "node src/proxy.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

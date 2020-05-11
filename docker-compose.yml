@@ -6,6 +6,6 @@ services:
     build:
       context: .
     ports:
-      - "8081:8081"
+      - "${PORT:-8081}:8081"
     environment:
       POSTGRES_HOST_AUTH_METHOD: trust
