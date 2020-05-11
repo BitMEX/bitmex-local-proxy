@@ -6,7 +6,7 @@ COPY package*.json ./
 
 RUN npm install
 
-COPY . .
+COPY ./proxy.js .
 
 EXPOSE 8081
 

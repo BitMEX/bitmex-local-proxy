@@ -7,5 +7,3 @@ services:
       context: .
     ports:
       - "${PORT:-8081}:8081"
-    environment:
-      POSTGRES_HOST_AUTH_METHOD: trust
