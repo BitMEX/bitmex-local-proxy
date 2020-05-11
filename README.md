@@ -3,7 +3,14 @@ BitMEX-Local-Proxy
 
 A really simple proxy intended for use with webapps, as we are not serving CORS headers on our API.
 
-Usage:
+Usage (Docker):
+```bash
+docker-compose up
+curl localhost:2080/instrument
+> [{"symbol":"XBTP14","state":"Open","typ":"FXXXS","listing":"2014-06-27T12:00:00.000Z"...
+```
+
+Usage (Code):
 
 ```bash
 npm install

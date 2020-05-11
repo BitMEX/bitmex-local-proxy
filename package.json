@@ -2,9 +2,9 @@
   "name": "bitmex-local-proxy",
   "version": "0.0.1",
   "description": "Proxy to BitMEX API.",
-  "main": "proxy.js",
+  "main": "src/proxy.js",
   "scripts": {
-    "start": "node proxy.js 8081",
+    "start": "node src/proxy.js 8081",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  bitmex-local-proxy:
+    container_name: "bitmex-local-proxy"
+    build:
+      context: .
+    ports:
+      - "8081:8081"
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
