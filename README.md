@@ -4,6 +4,7 @@ BitMEX-Local-Proxy
 A really simple proxy intended for use with webapps, as we are not serving CORS headers on our API.
 
 Usage (Docker):
+Use a .env file to override PORT to expose on host
 ```bash
 docker-compose up
 curl localhost:2080/instrument
