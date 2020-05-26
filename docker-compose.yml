@@ -7,3 +7,4 @@ services:
       context: .
     ports:
       - "${PORT:-8081}:8081"
+    restart: always
